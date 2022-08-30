@@ -54,8 +54,8 @@ Track.findOneData=function (id){
         as: "audio"
     });
 
-    return Track.findOne({where:{id}},{include:"audio"});
+    return Track.findOne({where:{id}},{include:"audio"}); 
 
-};
-
+}; 
+  
 module.exports= Track;

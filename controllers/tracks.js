@@ -15,8 +15,8 @@ const getItems = async (req, res) => {
         res.send({ data,user });
 
     } catch (error) {
-        console.log(error);
-        handleHttpError(res, 'ERROR_GET_ITEMS')
+        console.log(error,"••••••••••••");
+        handleHttpError(res, 'ERROR_GET_ITEMS');
     }
 }; 
 /**
@@ -51,7 +51,8 @@ const createItem = async (req, res) => {
         const data = await tracksModel.create(body);
         res.send({ body });
     } catch (error) {
-        handleHttpError(res, 'ERROR_CREATE_ITEM')
+        handleHttpError(res, 'ERROR_CREATE_ITEM');
+        console.log(error);
     }
 
 

@@ -16,5 +16,9 @@ const Storage = sequelize.define(
         timestamps: true 
     }
 );
+Storage.findAllData=function (){
+    return Storage.findAll();
+
+};
 
 module.exports= Storage;
